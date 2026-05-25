@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    margin-left: 10em;
+    margin-right: 10em;
+    background-color: #648;
+    height: 3em;
+}
+a{
+    color: red;
+    background-color: aqua;
+    font-size: 2em;
+}
+.slider-container {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.slider-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.image-section {
+    flex: 2;
+    text-align: center;
+}
+
+#slider-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Klasa za FadeIn efekat */
+.fade-in {
+    animation: fadeInAnimation 1000ms forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.info-section {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Stilovi za kružiće (indikatore) */
+.dots {
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}

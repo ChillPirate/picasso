@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocetna</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <link href="/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav><a href="Pocetna.html">Pocetna</a>
+         <a href="O-autoru.html">O Autoru</a>
+         <a href="Uputstvo.html">Uputstvo</a>
+    </nav>
+
+    <br><br><br><br><br>
+
+
+
+    <div class="slider-container">
+    <div class="slider-content">
+        <!-- Prikaz slike i indikatora -->
+        <div class="image-section">
+            <img id="slider-image" src="" alt="Slider slika">
+            <div id="dot-indicators" class="dots"></div>
+        </div>
+
+        <!-- Informacije o slici -->
+        <div class="info-section">
+            <h2 id="info-title"></h2>
+            <p><strong>Godina:</strong> <span id="info-year"></span></p>
+            <p id="info-desc"></p>
+        </div>
+    </div>
+</div>
+
+<script src="java.js"></script>
+<!--
+    <script>
+        $(document).ready(function () {
+            $()
+        })
+    </script>
+!--->
+    <footer>Copyright © Srednja Skola Mihajlo Pupin</footer>
+</body>
+
+</html>
